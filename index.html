@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ass Cheeks</title>
+    <script src="/socket.io/socket.io.js"></script>
+
+</head>
+<body>
+
+<script>
+    var socket = io();
+
+    console.log("Hello World");
+
+    socket.emit('search','1080');
+
+    socket.on('results', (results)=>
+     {
+     console.log(results);
+
+
+
+     })
+
+
+
+
+
+</script>
+</body>
+</html>
