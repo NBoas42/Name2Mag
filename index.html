@@ -11,22 +11,16 @@
 <script>
     var socket = io();
 
-    console.log("Hello World");
+    let searchParam = "Michael Bay";
 
-    socket.emit('search','1080');
+
+    socket.emit('search', searchParam);
 
     socket.on('results', (results)=>
      {
      console.log(results);
 
-
-
      })
-
-
-
-
-
 </script>
 </body>
 </html>
